@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="./game.css">
+</head>
+<body>
+    <div class="main-div">
+        <div class="game-name-div">
+            <img src="./guess icon svg.png" alt="" class="guess-logo">
+            <p class="game-name">GUESSING <span class="span-name">GAME</span></p>
+        </div>
+
+        <div class="gen-div">
+            <div class="dashboard-div">
+                <div class="each-profile-div">
+                    <p>Player: </p>
+                    <p id="player-name">Player 1</p>
+                </div>
+                <br>
+                <div class="each-profile-div">
+                    <p>Score: </p>
+                    <p id="score-display">0</p>
+                </div>
+                <br>
+                <div class="each-profile-div">
+                    <p>Level: </p>
+                    <p id="level-display">1</p>
+                </div>
+                <br>
+                <br>
+                <div class="help-div">
+                    <p>Guessing game is all about guessing the right number that will display in any of the boxes covered. Enter a number of your choice from "1 to 10" in the text field and click the "CHECK" button.</p>
+                </div>
+            </div>
+
+
+            <div class="game-div">
+                <div class="random-div">
+                    <div class="random-box">
+                        <p  id="random-num1">0</p>
+                        <div class="cover-box" id="covering-box1"></div>
+                    </div>
+                    <div class="random-box">
+                        <p id="random-num2">0</p>
+                        <div class="cover-box" id="covering-box2"></div>
+                    </div>
+                    <div class="random-box">
+                        <p id="random-num3">0</p>
+                        <div class="cover-box" id="covering-box3"></div>
+                    </div>
+                </div>
+                <textarea name="num-input" id="num-input" class="num-input"></textarea>
+                <br>
+                <button id="submit-button">CHECK</button>
+                <p id="error-message"></p>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="./game.js"></script>
+</body>
+</html>
